@@ -1,7 +1,77 @@
-body {
-  background-color: lightblue;
+div {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+h1.overline {
+  text-decoration-line: overline;
+}
+
+h1.line-through {
+  text-decoration-line: line-through;
+}
+
+h1.underline {
+  text-decoration-line: underline;
+  text-decoration-color: blue;
+  text-decoration-style: solid;
+  text-decoration-thickness: 5px;
+}
+
+h1.shadow {
+  text-shadow: 2px 2px 5px;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+  white-space: nowrap;
+}
+
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+
+p.small {
+  line-height: 0.7;
+}
+
+p.big {
+  line-height: 1.8;
+}
+
+p.one {
+  word-spacing: 10px;
+}
+
+p.two {
+  word-spacing: -2px;
+}
+
+a {
+  text-decoration: none;
+  color: #008CBA;
+}
+
+/*body {
+  background-color: whitesmoke;
   background-image: url("premium_photo.avif");
-/*  background-repeat: repeat-x;*/
+  background-repeat: repeat-x;
   background-repeat: no-repeat;
 }
 
@@ -20,4 +90,20 @@ div {
   background-color: green;
   opacity: 0.3;
   margin: 10px;
+  padding: 10px;
+  height: 50px;
+  width: 100%;
 }
+
+div.ex1 {
+  width: 300px;
+  background-color: yellow;
+}
+
+div.ex2 {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: lightblue;
+}
+*/
