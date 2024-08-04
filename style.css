@@ -117,10 +117,95 @@ p.b {
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
-a {
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
   text-decoration: none;
-  color: #008CBA;
+  display: inline-block;
 }
+
+a:hover, a:active {
+  background-color: red;
+}
+
+ul.a {
+  list-style-type: circle;
+  list-style-position: outside;
+}
+
+ul.b {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+ol {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: square inside url('sqpurple.gif');
+  background: #3399ff;
+  padding: 20px;
+}
+
+ol li {
+  background: #ffe5e5;
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ul li {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}
+
+/*a {
+  text-decoration: none;
+  color: hotpink;
+}
+
+a:link {
+  color: red;
+  text-decoration: none;
+  background-color: yellow;
+}
+
+a:visited {
+  color: green;
+  text-decoration: none;
+  background-color: cyan;
+}
+
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
+  background-color: lightgreen;
+}
+
+a:active {
+  color: blue;
+  text-decoration: underline;
+  background-color: hotpink;
+}*/
 
 /*body {
   background-color: whitesmoke;
