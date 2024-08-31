@@ -5,11 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Practice CSS</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
   <script src="https://kit.fontawesome.com/6a28402afa.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <h2>CSS Overflow</h2>
+  <p>The overflow property controls what happens to content that is too big to fit into an area.</p>
+
+  <div id="overflowTest">This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</div>
+
+<!--   <h1>Z-index Example</h1>
+  <p>An element with greater stack order is always above an element with a lower stack order.</p>
+  <div class="container">
+    <div class="black-box">Black box (z-index: 1)</div>
+    <div class="gray-box">Gray box (z-index: 3)</div>
+    <div class="green-box">Green box (z-index: 2)</div>
+  </div> -->
+
+<!--   <h1>This is a heading</h1>
+  <img src="img_tree.png">
+  <p>Because the image has a z-index of -1, it will be placed behind the text.</p> -->
+
+  <!-- <h2>Image Text</h2>
+  <p>Add some text to an image:</p>
+  <div class="container">
+    <img src="img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="300">
+    <div class="topleft">Top Left</div>
+    <div class="topright">Top Right</div>
+    <div class="bottomleft">Bottom Left</div>
+    <div class="bottomright">Bottom Right</div>
+    <div class="center">Centered</div>
+  </div>
+  <hr>
+
+  <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+  <div class="sticky">I am sticky!</div>
+
+  <div style="padding-bottom:2000px">
+    <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+    <p>Scroll back up to remove the stickyness.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  </div>
+  <hr>
+
+  <h2>position: absolute;</h2>
+
+  <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+  <div class="relative">This div element has position: relative;
+    <div class="absolute">This div element has position: absolute;</div>
+  </div>
+  <hr>
+
+  <h2>position: fixed;</h2>
+
+  <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+
+  <div class="fixed">
+  This div element has position: fixed;
+  </div>
+  <hr>
+
+  <h2>position: relative;</h2>
+
+  <p>An element with position: relative; is positioned relative to its normal position:</p>
+
+  <div class="relative">
+  This div element has position: relative;
+  </div>
+  <hr>
+
+  <h2>position: static;</h2>
+
+  <p>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+
+  <div class="static">
+  This div element has position: static;
+  </div>
+  <hr>
+
+  <h2>CSS Max-width</h2>
+
+  <div class="ex1">This div element has width: 500px;</div>
+  <br>
+
+  <div class="ex2">This div element has max-width: 500px;</div>
+
+  <p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between 
+  the two divs!</p>
+  <hr>
+
+  <h1>This is a visible heading</h1>
+  <h1 class="anotherhidden">This is a hidden heading</h1>
+  <p>Notice that the hidden heading still takes up space.</p>
+  <hr>
+
+  <h1>This is a visible heading</h1>
+  <h1 class="hidden">This is a hidden heading</h1>
+  <p>Notice that the h1 element with display: none; does not take up any space.</p>
+  <hr>
+
+  <h1>Display links as block elements</h1>
+
+  <a href="/html/default.asp" target="_blank">HTML</a>
+  <a href="/css/default.asp" target="_blank">CSS</a>
+  <a href="/js/default.asp" target="_blank">JavaScript</a>
+  <hr>
+
+  <h1>Display span elements as block elements</h1>
+
+  <span>A display property with</span> <span>a value of "block" results in</span> <span>a line break between each span elements.</span>
+  <hr>
+
+  <p>Display a list of links as a horizontal menu:</p>
+
+  <ul>
+    <li><a href="/html/default.asp" target="_blank">HTML</a></li>
+    <li><a href="/css/default.asp" target="_blank">CSS</a></li>
+    <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+  </ul>
+  <hr>
+
   <h2>Responsive Table</h2>
   <p>A responsive table will display a horizontal scroll bar if the screen is too 
   small to display the full content. Resize the browser window to see the effect:</p>
@@ -392,17 +509,13 @@
   </div>
   <hr>
 
-<!--   <div class="ex1">This div is 300px wide</div>
-  <div class="ex2">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property</div>
-  <hr> -->
-
   <h1 style="border:2px solid Tomato">Hello World</h1>
   <h1 style="border:2px solid DodgerBlue">Hello World</h1>
   <h1 style="border:2px solid Violet">Hello World</h1>
   <hr>
 
   <h1>My First CSS Example</h1>
-  <p>This is a paragraph</p>
+  <p>This is a paragraph</p> -->
 
 </body>
 </html>
