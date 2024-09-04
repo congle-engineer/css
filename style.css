@@ -1,4 +1,45 @@
-* {
+.nav {
+  background-color: yellow;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+/*span.a {
+  display: inline;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}
+
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}
+
+span.c {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}*/
+
+/** {
   box-sizing: border-box;
 }
 
@@ -46,7 +87,7 @@ body {
 
 .menu li:hover {
   background-color: #0099cc;
-}
+}*/
 
 /*ul {
   list-style-type: none;
