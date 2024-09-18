@@ -1,6 +1,64 @@
-div ~ p {
-  background-color: yellow;
+q:lang(no) {
+  quotes: "~" "~";
 }
+
+/*p:first-child i {
+  color: blue;
+}
+*/
+/*p i:first-child {
+  color: blue;
+}*/
+
+/*p:first-child {
+  color: blue;
+}
+*/
+/*p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div:hover p {
+  display: block;
+}*/
+
+/*div {
+  background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+div:hover {
+  background-color: blue;
+}*/
+
+/*a.highlight:hover {
+  color: #ff0000;
+  font-size: 22px;
+}*/
+
+/*a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}*/
+
+/*div ~ p {
+  background-color: yellow;
+}*/
 
 /*div + p {
   background-color: yellow;
