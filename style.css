@@ -1,8 +1,52 @@
-::selection {
+div.background {
+  background: url(img_mountains.jpg);
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+/*div {
+  background-color: #04AA6D;
+  padding: 10px;
+  margin: 10px;
+}
+
+div.first {
+  opacity: 0.1;
+}
+
+div.second {
+  opacity: 0.3;
+}
+
+div.third {
+  opacity: 0.6;
+}*/
+
+/*img { 
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}*/
+
+/*::selection {
   color: red;
   background: yellow;
 }
-
+*/
 /*::marker {
   color: red;
   font-size: 23px;
