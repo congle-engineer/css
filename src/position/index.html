@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      div.static {
+        position: static;
+        border: 3px solid #73ad21;
+      }
+      div.relative {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        left: 30px;
+        border: 3px solid #73ad21;
+      }
+      div.fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        height: 200px;
+        border: 3px solid #73ad21;
+      }
+      div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid red;
+      }
+      div.sticky {
+        position: sticky;
+        top: 0;
+        padding: 5x;
+        background-color: #cae8ca;
+        border: 2px solid #4caf50;
+      }
+      img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+      }
+      .container {
+        position: relative;
+      }
+      .black-box {
+        position: relative;
+        z-index: 1;
+        border: 2px solid black;
+        height: 100px;
+        margin: 30px;
+      }
+      .gray-box {
+        position: absolute;
+        z-index: 3;
+        background: lightgray;
+        height: 60px;
+        width: 70%;
+        left: 50px;
+        top: 50px;
+      }
+      .green-box {
+        position: absolute;
+        z-index: 2;
+        background: lightgreen;
+        width: 35%;
+        left: 270px;
+        top: -15px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Using position: static;</h2>
+
+    <p>
+      An element with position: static; is always positioned according to the
+      normal flow of the page:
+    </p>
+
+    <div class="static">This div element has position: static;</div>
+
+    <h2>Using position: relative;</h2>
+
+    <p>
+      An element with position: relative; is positioned relative to its normal
+      position:
+    </p>
+
+    <div class="relative">This div element has position: relative;</div>
+
+    <h2>Using position: fixed;</h2>
+
+    <p>
+      An element with position: fixed; is positioned relative to the viewport,
+      which means it always stays in the same place even if the page is
+      scrolled:
+    </p>
+
+    <div class="fixed">This div element has position: fixed;</div>
+
+    <h2>Using position: absolute;</h2>
+
+    <p>
+      An element with position: absolute; is positioned relative to the nearest
+      positioned ancestor:
+    </p>
+
+    <div class="relative">
+      This div element has position: relative;
+      <div class="absolute">This div element has position: absolute;</div>
+    </div>
+
+    <h2>Using position: sticky;</h2>
+
+    <p>Try to scroll this page to understand how sticky works.</p>
+
+    <p>
+      Here, when the sticky element reach the top of the page (top: 0), it
+      sticks to this position!
+    </p>
+
+    <div class="sticky">I have position sticky!</div>
+
+    <div style="padding-bottom: 2000px">
+      <p>Scroll back up to remove the stickyness!</p>
+      <p>
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
+        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+        molestiae voluptatibus.
+      </p>
+      <p>
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
+        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+        molestiae voluptatibus.
+      </p>
+      <p>
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
+        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+        molestiae voluptatibus.
+      </p>
+    </div>
+
+    <h1>This is a heading</h1>
+    <img src="../../images/img_tree.png" />
+    <p>
+      Because the image has a z-index of -1, it will be placed behind the text.
+    </p>
+
+    <h1>Z-index Example</h1>
+
+    <p>
+      An element with greater stack order is always above an element with a
+      lower stack order.
+    </p>
+
+    <div class="container">
+      <div class="black-box">Black box (z-index: 1)</div>
+      <div class="gray-box">Gray box (z-index: 3)</div>
+      <div class="green-box">Green box (z-index: 2)</div>
+    </div>
+  </body>
+</html>
